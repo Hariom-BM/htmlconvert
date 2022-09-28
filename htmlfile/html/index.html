@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial,Helvetica,sans-serif;
+        }
+        /* common classes  */
+        p.bm-para{
+             font-size: 1em;
+             line-height: 1.5em;
+             margin: 0;
+             padding-top: 20px;
+        }
+        .bm-padding{
+          padding-top: 10px;
+        }
+       
+        .bg-blue{
+            background-color: #2980b9;
+        }
+        .bm-width{
+            max-width: 340px;
+        }
+        .bm-max-width{
+            max-width: 100%;
+        }        
+        .blu-para{
+             color:#2980b9;
+        }
+        .bm-flex{
+            justify-content: space-between;
+        }
+        .bm-margin{
+           margin-top:  -200px
+        } 
+         /* common classes end  */     
+     
+        .logo-section{
+            display: flex;
+            justify-content: center;
+        }
+        .bm-container .bm-inner{
+          max-width: 760px;
+          margin: 0 auto;
+          display: flex;
+        }
+        .bm-container .bm-inner .bm-heading-block{       
+         color: #fff;
+         padding: 20px 0;
+        }
+        .bm-container .bm-inner .image-block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .bm-container .bm-inner .image-block .bm-image{
+            max-width: 210px;
+        }
+        .bm-container .bm-inner .image-block .bm-image img{
+            width: 100%;
+        }
+        .bm-container .bm-inner .image-block .bm-form  .bm-errors{
+            display: none;
+        }
+
+        /* media quaries  */
+       @media(max-width:767px){
+        .bm-container .bm-inner .image-block .bm-image{
+            display: none;
+        }
+        .bm-margin{
+            margin: 0;
+        }
+        .bm-container .bm-inner{
+            flex-direction: column-reverse;        
+       }
+       .bm-width{
+           padding: 20px !important;
+        } 
+    }
+       
+    </style>
+</head>
+<body>
+    <!-- header part  -->
+    <div class="logo-section">
+        <div class="bm-logo"><img src="https://storage.pardot.com/708093/9532/logo.JPG" alt="paradot logo"></div>    
+    </div>
+    <!-- hero-part  -->
+    <div class="bm-container bg-blue bm-max-width">
+        <div class="bm-inner">
+            <!-- hero main heading  -->
+            <div class="bm-heading-block bm-width">
+                <h1 class="bm-heading">The captioning service you love on your ClearCaptions home phone is also available on the go.</h1>
+            </div>
+
+           
+        </div>
+    </div>
+    <!-- below-fold section  -->
+    <div class="bm-container">
+        <div class="bm-inner bm-flex">
+            <!-- left section  -->
+            <div class="content-block bm-width">
+                <p class="bm-para">Now you can have the captions wherever you go! With the ClearCaptions Mobile app for iPhone and iPad you can stay connected outside the home.</p>
+                <p class="bm-para">Plus, you can use the same phone number on your home caption phone AND your cell phone. You can choose to answer a call on either your home phone or the cell phone app. Enjoy the convenience of getting captioned calls on your cell phone while you’re away from home. </p>
+                <p class="bm-para blu-para">"<em>The app has been life-changing. I no longer have to ask people to text me or email me information. I can look down and read what they’re saying right on my cell phone."</em></p>
+                <p class="bm-para">- iOS App Store Review </p>
+            </div>
+
+            <!-- right section  -->
+            <div class="image-block forms bm-margin ">
+                <div class="bm-image">
+                    <img src="/images/mobileimage.png" alt="mobile-image">
+                </div>
+
+                <div class="bm-form">
+                    <form>
+                        <p class="bm-errors">Please correct the errors below:</p>
+                        <p class="form-title ">Ready to get started? Answer the question below.</p>
+                        <p class="form-field  bm-email ">	                              
+                            <input type="text" name="Email" id="bmEmail" value="" class="bmtext bm-input" placeholder="Email:">                    
+                        </p>
+                        <p class="form-field  bm-Smart_Phone_Type pd-select required ">	                                 
+                            <select name="" id="" class="bm-select bm-input" >                                 
+                                <option value=""selected="selected" class="selected" disabled>What type of cell phone do you have?</option>                               
+                                <option value="">Android (Samsung, LG, Google) </option>
+                                <option value="">iPhone or iPad  </option>
+                            </select>                    
+                        </p>
+                        <p class="submit ">
+                            <input type="submit" value="Submit" class="submit-cta">
+                        </p>
+                      </form>
+                </div>
+
+            </div>
+
+           
+        </div>
+    </div>
+</body>
+</html>
